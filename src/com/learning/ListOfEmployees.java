@@ -44,4 +44,17 @@ public class ListOfEmployees {
             System.out.println("Location : "+ e.getEmpLocation());
         }
     }
+
+    public String getEmpName(int index){
+        EmployeeDetail e = empList.get(index);
+        return e.getEmpName();
+    }
+
+    public int getNumberOfEmployees(){
+        int numberOFEmp = 0;
+        for(int i=0; i<empList.size();i++)
+            numberOFEmp++;
+
+        return numberOFEmp;
+    }
 }
