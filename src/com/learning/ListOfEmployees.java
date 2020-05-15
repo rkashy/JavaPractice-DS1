@@ -1,6 +1,7 @@
 package com.learning;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListOfEmployees {
     private ArrayList<EmployeeDetail> empList = new ArrayList<EmployeeDetail>();
@@ -56,5 +57,9 @@ public class ListOfEmployees {
             numberOFEmp++;
 
         return numberOFEmp;
+    }
+
+    public List<EmployeeDetail> getListOfEmp() {
+        return empList;
     }
 }
